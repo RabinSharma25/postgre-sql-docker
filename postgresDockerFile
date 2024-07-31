@@ -1,0 +1,16 @@
+# Use the official PostgreSQL 16 image as the base image
+FROM postgres:16.3
+
+# Set environment variables for PostgreSQL
+ENV POSTGRES_USER=myuser
+ENV POSTGRES_PASSWORD=mypassword
+ENV POSTGRES_DB=mydb
+
+
+# Expose the default PostgreSQL port
+EXPOSE 5432
+
+
+# Copy custom configuration files
+# By defult the listen_address in the configuration file(postgresql.conf) is already set to "*"" so we dont need any additional configurations to connect to the database remotely
+# Note that if you are not able to connect remotely change the listen_address = "*"
