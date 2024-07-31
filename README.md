@@ -2,15 +2,15 @@
 Setting up postgreSQL in remote server using docker and configuring it for remote access 
 
 # In local 
-1. building the docker image fromt he dockerfile
-sudo docker build -t my-postgres-image -f postgresDockerFile .
+1. Building the docker image from he dockerfile
+- sudo docker build -t my-postgres-image -f postgresDockerFile .
 
 2. running the docker image 
-sudo docker run --name my-postgres-container -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -e POSTGRES_DB=mydb -p 5432:5432 -d my-postgres-image
+- sudo docker run --name my-postgres-container -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -e POSTGRES_DB=mydb -p 5432:5432 -d my-postgres-image
 
 # In remote server
 
-1. First build the image
+1. First build the image in your local 
 2. push the docker image to docker hub
  - login to docker 
    - docker login
