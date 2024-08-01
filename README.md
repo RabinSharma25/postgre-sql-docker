@@ -23,3 +23,8 @@ Setting up postgreSQL in remote server using docker and configuring it for remot
 4. run the image 
    - sudo docker run --name my-postgres-container -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -e POSTGRES_DB=mydb -p 5432:5432 -d rabinsh/my-postgres-image
  
+
+# References
+1. https://youtu.be/mQ3mZVXM6iE?si=W1cQsdMweZm-xkhK
+2. https://youtu.be/01BlrWPkfgY?si=xXoEEo6E5WUEklNO
+3. https://youtu.be/Xtj0dhNQ8aQ?si=ycjbEuejhrh6F5Nf
